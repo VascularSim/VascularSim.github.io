@@ -1,146 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> VascularSim </title>
-	<link rel="icon" href="Bloodsim/BloodSim.ico">
-	
-	<!-- Meta Tags  -->
-	<meta charset="UTF-8">
-	<meta property="og:type" content="website">
-	<meta property="og:image:secure" content="Bloodsim/images/logo.jpg" />
-	<meta property="og:image:width" content="400" /> 
-	<meta property="og:image:height" content="300" />		
-	<meta name="image" content="Bloodsim/images/logo.jpg"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<meta name="keywords" content="" />
-	<meta name="author" content="Praveen & Arvind" />
-	
+    <title> VascularSim </title>
+    <link rel="icon" href="Bloodsim/BloodSim.ico">
+    
+    <!-- Meta Tags  -->
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="" />
+    <meta name="author" content="Praveen & Arvindh" />
+    
 
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="curry-wrapper">
+      <div id="harden-wrapper">
+          <nav class="navbar navbar-expand-lg main-navbar-nav navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">VascularSim</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick="$('#features').goTo();return false;">Features <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Experiments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="$('#footer-download').goTo();return false;">Download</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" onclick="$('#contact-us').goTo();return false;">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://touchlab.iitm.ac.in/"><img src="../img/touchlab-logo.png" height="50px" alt=""></a>
+          </nav>
+          <div class="container harden-inner">
+              <h1 class="first-line">Open-Source Cardiovascular</h1>
+              <br>
+              <h1 class="second-line">Simulator</h1>
+              <button class="align-self-center btn flex-column btn-primary download-btn">DOWNLOAD</button>
+              <img class="laptop-img animated fadeIn wow" data-wow-delay="0.5s" src="img/laptop.png" alt="UI">
+          </div>
+      </div>
 
-<div id="page-wrap">
-	<!-- ==========================================================================================================
-													HERO
-		========================================================================================================== -->
+      <div class="container-fluid harden2">
+        <div class="row advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s">
+          <div class="col-sm-4">
+            <img class="grid-image" src="img/icon-1.png" alt="Icon-1">
+            <h1 class="grid-title">Customizable <br/> parameters</h1>
+            <p class="grid-desc">User set values for Blood and heart properties such as elastance, resistance and inductance.</p>
+          </div>
+  
+          <div class="col-sm-4">
+            <img class="grid-image" src="img/icon-2.png" alt="Icon-2">
+            <h1 class="grid-title">Stenosis Conditions</h1>
+            <p class="grid-desc">Simulate pressure and flow under multiple stenosis conditions.</p>
+          </div>
+  
+          <div class="col-sm-4">
+            <img class="grid-image" src="img/icon-3.png" alt="Icon-3">
+            <h1 class="grid-title">Analyze waveforms</h1>
+            <p class="grid-desc">Analyze the waveforms and calculate pressure and flow values.</p>
+          </div>
+        </div>
+      </div>
 
-	<div id="fh5co-hero-wrapper">
-		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
-			<a class="navbar-brand" href="">VascularSim</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+      <div id="features" class="harden3">
+        <div class="curved-bg-div wow animated fadeIn" data-wow-delay="0.15s"></div>
+        <div class="container">
+          <div class="row fh5co-features-grid-columns">
+            <div class="col-sm-6 order-1 sm-6-content wow animated fadeInLeft" data-wow-delay="0.22s">
+              <div class="col-sm-image-container">
+                <img class="img-float-Right" src="img/features.png" width="500" height="300" >
+              </div>
+            </div>
+            <div class="col-sm-6 order-2 wow animated fadeInRight links" data-wow-delay="0.22s">
+              <h1>What we do...</h1><br>
+              <a href=""><p>Simulate blood pressure and flow in all of the major arteries</p></a><br>
+              <a href=""><p>Simulate physiological conditions like stenosis</p></a><br>
+              <a href=""><p>Perform practical experiments</p></a><br>
+              <a href=""><p>More pysiological systems to be added soon</p></a><br>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-items-center ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#fh5co-features').goTo();return false;">Features</a>
-					</li>
-					<!--<li class="nav-item">
-						<a class="nav-link" href="#" onclick="$('#fh5co-reviews').goTo();return false;">Reviews</a>
-					</li>-->
-					<li class="nav-item">
-						<a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">Experiments</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">Download</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"  onclick="$('#fh5co-download').goTo();return false;">About</a>
-					</li>
-				</ul>
-				
-			</div>
-		</nav>
+      <div id="contact-us" class="harden4">
+        <div class="container">
+          <div class="row contact-us">
+            <div class="col-sm-6 order-1 sm-6-content wow animated fadeInLeft" data-wow-delay="0.22s">
+              <h1>Contact us</h1><br>
+              <p>You can view the entire project on our github page or go through our complete documentation. If you wish to contact us, feel free to send us a mail</p>
+            </div>
+            <div class="col-sm-6 order-2 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
+              <button class="align-self-center btn flex-column btn-primary download-btn">GITHUB</button>
+              <button class="align-self-center btn flex-column btn-primary download-btn">DOCUMENTATION</button>
+              <button class="align-self-center btn flex-column btn-primary download-btn">MAIL US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="harden5">
+        <div class="container">
+          <h1>The DEV team</h1>
+          <div class="container fh5co-reviews-inner">
+            <div class="row justify-content-center">
+              <div class="testimonial-2 wow fadeIn animated" data-wow-delay="0.25s">
+                <a href="https://touchlab.iitm.ac.in/index.php/professor/"><img src="img/picture-manivannan.jpg"  width="160" height="160" alt="" ></img></a>
+                <p class="testimonial-desc" >Dr. Manivannan M</p>
+              </div>
+              <div class="testimonial-2 wow fadeIn animated" data-wow-delay="0.54s">
+                <img  src="img/picture-man.jpg" width="160" height="160" alt=""></img>
+                <p class="testimonial-desc" >Arvindh Swaminathan MB</p>
+              </div>
+              <div class="testimonial-2 wow fadeIn animated" data-wow-delay="0.80s">
+                <img   src="img/picture-man.jpg" width="160" height="160" alt=""></img>
+                <p class="testimonial-desc" >Praveen Kumar S</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="container fh5co-hero-inner">
-			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">Open-source Cardio Vascular</h1>
-			<h2 class="animated fadeIn wow" data-wow-delay="0.4s">simulator</h2>
-			<!--<button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="1s" onclick="$('#fh5co-download').goTo();return false;">Download</button> -->
-			<a  href='#'>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				Download
-			</a>
-		</div>
+      <div id="footer-download" class="harden-footer">
+        <div id="fh5co-download" class="fh5co-bottom-outer">
+          <div class="overlay">
+            <div class="container fh5co-bottom-inner">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h1>VascularSim</h1>
+                  <a class="wow fadeIn animated" data-wow-delay="0.25s" href="https://github.com/bloodsimulator/IrudhayaNuraiyeral/releases/download/v0.1-beta/BloodSim.zip"> 
+                    <button class="align-self-center btn flex-column btn-primary download-btn">DOWNLOAD</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+  
+  
+    </div>
 
-	</div> <!-- first section wrapper -->
-
-	<!-- ==========================================================================================================
-													FEATURES
-		========================================================================================================== -->
-
-	
-	<div id="fh5co-features" class="fh5co-features-outer">
-		<div class="container">
-			<div class="row fh5co-features-grid-columns">	
-
-				
-				<div class="col-sm-6 order-1 wow animated fadeInLeft" data-wow-delay="0.22s"> 
-					<img src = "../img/features.png">
-				</div>
-
-				<div class="col-sm-6 order-2 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
-					<div class="paanel text-left">
-						<h1>Features</h1>
-						<p1>Simulate blood pressure in flow in all of the major arteries</p1>
-						<p2>Simulate physiological conditions like stenosis</p2>
-						<p3>Perform practical exercices</p3>
-						<p4>More physiological systems to be added soon</p4>
-					</div>
-				</div>
-			</div> <!-- row -->
-		</div>
-	</div>
-
-	<!-- ==========================================================================================================
-                                            SECTION 7 - SUB FOOTER
-    ========================================================================================================== -->
-
-	<footer class="footer-outer">
-		<div class="container footer-inner">
-
-			<div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
-				<div class="column-1-3">
-					<h1>BloodSim</h1>
-				</div>
-				<div class="column-2-3">
-					<nav class="footer-nav">
-						<ul>
-							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
-							<a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Features</li></a>
-							<a href="#" onclick="$('#fh5co-download').goTo();return false;"><li class="active">Download</li></a>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<span class="border-bottom-footer"></span>
-		</div>
-	</footer>
-
-
-
-
-</div> <!-- main page wrapper -->
-	
-	<script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/wow.min.js"></script>

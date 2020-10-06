@@ -1,0 +1,23 @@
+.bg{
+  height: 60vh;
+  background: cornflowerblue;
+  display: flex;
+}
+
+.bg .div1{
+  height: 600px;
+  width: 600px;
+  color: brown;
+}
+
+.bg .div2{
+  height: 600px;
+  width: 600px;
+  color: yellow;
+}
+
+.bg .div1{
+  height: 600px;
+  width: 600px;
+  color: black;
+}

@@ -462,6 +462,31 @@ color: #9C27B0;
   color: #9C27B0;
 }
 
+.modules{
+  padding-top: 8%;
+}
+
+.modules h2{
+  text-align: center;
+}
+
+.moduleNames{
+  padding-top:1%;
+}
+
+.moduleNames p{
+  padding-top:4%;
+  font-size: 20px;
+}
+
+.moduleNames .sub{
+  margin-top: -5%;
+  font-size: 15px;
+}
+
+.hospital-logo{
+  background-color: blue;
+}
 
 .demo-graph h1{
   color: white;

@@ -45,20 +45,30 @@ var data = [{
     width: 2
     }
 }]
-    
+
 var layout = {
-    width: 1000,
-    height: 350,
+    height:400,
     xaxis: {
         autorange: true,
         autotick: true,
         showgrid: false,
         tickcolor: '#fff',
         showticklabels: false
-      }
+    },
+    yaxis:{autorange: true},
+    autosize: true
 };
+
+var config = {responsive: true}
     
-Plotly.newPlot('myDiv', data, layout );
+Plotly.newPlot('myDiv', data, layout, config  );
+
+window.onresize = function() {
+    Plotly.relayout('myDiv', {
+        'xaxis.autorange': true,
+        'yaxis.autorange': true
+    });
+};
 
 var cnt = 0;
 let prev = 0;

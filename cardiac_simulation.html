@@ -19,7 +19,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="icon" type="image/png" href="./assets/img/heart-logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    VascularSim Effect of Posture
+    VascularSim - Cardiac Simulation
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
@@ -77,8 +77,12 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="title">Effect of posture on blood pressure</h1>
-          <h4 style="text-align: justify;">Study how the blood pressure, heart rate and other parameters change when there is a change in posture. Perform experiments like HUTT (Head UP Tilt Test) and analyze the results.</h4>
+          <h1 class="title">Cardiac Simulation - chambers, valves and  vessels</h1>
+          <h4 style="text-align: justify;">Simulate and study the pressure, flow and 
+            volume waveforms of the human heart. Analyze the blood flowing 
+            through the heart chambers, valves and vessels. Experience a real-life 
+            patient monitor.
+          </h4>
           <br>
         </div>
       </div>
@@ -90,9 +94,10 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">OVERVIEW</h2>
-            <h5 class="description">This module can be used to study the effect of change in posture on blood pressure. The Head-up-tilt test 
-              can be performed by controlling the tilt angle (in degrees) and the time taken (in seconds) for the tilt table to reach
-              the angle.</h5>
+            <h5 class="description">This module can be used to simulate 
+              multiple parameters of every individual section of the heart, 
+              and experience the use of software very similar to that of the 
+              catheterization laboratory.</h5>
           </div>
         </div>
         <div class="introduction">
@@ -101,9 +106,10 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">LEARNING OBJECTIVES</h2>
               <p>
-                1. Understand how gravity affects the blood pressure <br><br>
-                2. Study the effect of varying gravitational field multiple arteries (Upper body and lower body) <br><br>
-                3. Simulate and study the effect of microgravity on blood pressure <br><br>
+                1. Study the blood pressure, flow and volume waveforms
+                In multiple sections of the heart <br><br>
+                2. Understand the heart waveforms by varying speed,
+              Scale and other parameters of the graph. <br><br>
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -115,27 +121,24 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">INTRODUCTION</h2>
               <p>
-                A tilt table test (sometimes known as a passive head-­up tilt test (HUTT) 
-                is used to record blood pressure and heart rate each minute, while the patient
-                 is tilted on a table at varying levels. The average duration of the test is 
-                 about an hour. The HUT test is often used to assess patients ability to regulate 
-                 blood pressure, in particular for patients who suffer from frequent episodes of 
-                 syncope, light- headedness, or dizziness . During the test, the patient 
-                 first rests on a tilt-table in supine position. After steady values for 
-                 pressure and heart rate (HR) have been established, the table is tilted 
-                 to an angle which is customizable. Upon tilting, gravity pools approximately 
-                 500–1000ml of blood in the lower extremities reducing venous return, which
-                 induces a reduction in cardiac filling, pressure and volume. In response,
-                 blood pressure in the upper body is decreased, while blood pressure in
-                 the lower body is increased. <sup>[1]</sup>
+                Cardiac hemodynamics is the study of motion of blood inside the heart. 
+                The heart contains four chambers - left and right atria and the left and 
+                right ventricle. The left and right chambers do not meet each other, i.e. 
+                blood in the left side of the heart is isolated from that in the right side 
+                of the heart. The atria are connected to their corresponding ventricles via 
+                valves. Similarly, the arteries leaving the two ventricles also have valves.
               </p>
               <p>
-                For normal subject, this pressure imbalance causes the baroreflex to kick in 
-                causing increase in heart rate, cardiac contractility, and vascular resistance
-                and decrease in vascular compliance. Whereas in subjects with autonomic 
-                dysfunction this is associated with severe risks including dizziness, loss of 
-                balance leading to falls, and reflex mediated syncope, in particular, for the
-                elderly and for patients with hypertension and diabetes.<sup>[1]</sup>
+                In the heart the atria contract first, causing blood to enter the ventricles 
+                which then contract in order to force the blood into the arteries. The 
+                valves serve the purpose of preventing the backflow. It is thus of great 
+                clinical interest to measure the blood pressure in each of these chambers 
+                in order to assess the contractility of the cardiac muscles, the 
+                functioning of the valves, blockages in any of the arteries etc. 
+                Using the cardiac model , it is possible to conduct experiments 
+                where the model paramters can be altered to simulate a condition 
+                and then the blood pressure in the different chambers and blood 
+                vessels of the heart can be visualised, according to the model.
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -145,17 +148,37 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row introductory-image">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-              <img class="introductory-image" src="./assets/img/docs/tilt-test.png" alt="">
+              <img class="introductory-image" src="./assets/img/docs/heart_anatomy.png" alt="", style="height: 100%;">
             </div>
             <div class="col-md-2"></div>
+          </div>
+        </div>
+        <div class="introduction">
+          <div class="row introduction">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 intro-content">
+              <p>
+                In the heart the atria contract first, causing blood to enter the ventricles 
+                which then contract in order to force the blood into the arteries. The 
+                valves serve the purpose of preventing the backflow. It is thus of great 
+                clinical interest to measure the blood pressure in each of these chambers 
+                in order to assess the contractility of the cardiac muscles, the 
+                functioning of the valves, blockages in any of the arteries etc. 
+                Using the cardiac model , it is possible to conduct experiments 
+                where the model paramters can be altered to simulate a condition 
+                and then the blood pressure in the different chambers and blood 
+                vessels of the heart can be visualised, according to the model.
+              </p>
+            </div>
+            <div class="col-md-1"></div>
           </div>
         </div>
         <div class="data-flow">
           <div class="row data-flow">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-              <h2 class="title data-title">BLOCK DIAGRAM</h2>
-              <img class="block-diagram" src="./assets/img/docs/eff_of_posture.png" alt="">
+              <h2 class="title data-title">SCHEMATIC DIAGRAM</h2>
+              <img class="block-diagram" src="./assets/img/docs/heart_study_block.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -166,34 +189,48 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 model-content">
               <h2 class="title">MATHEMATICAL MODEL</h2>
               <p>
-                The model for the simulation of Head-up-tilt test (HUTT) has been adopted
-                from a lumped parameter model that has been developed by T.Heldt.<sup>[3]</sup>As
-                described by Sam Ahmad Zamanian <sup>[2]</sup>, the hydrostatic pressure gradient imposed
-                on a tube (under a constant accelerational field of gravity) by tilting it upwards
-                is given by <br><br>
-              </p>
-              <p class="maths-formula">D * g * h * sin(a) <b><br></b></p>
-              <p>
-                where, <br>
-                D - density of the fluid (blood) <br>
-                g - gravitational accleration <br>
-                h - effective height of the artery <br>
-                a - angle of tilt <br> <br>
-                The effective height h of the compartment is assumed to be one half of the 
-                anatomical vertical heights; the exception to this is in the legs, where the 
-                effective height is one third of the anatomical height. <br> <br>
-                The time course of the tilt angle follows a raised cosine model given by,
-              </p>
-              <img class="maths-sine" src="./assets/img/docs/maths-sine-effect_of_posture.png" alt="">
-              <p>
-                <br> <br> where, <br>
-                amax - maximum tilt angle in the upright tilt simulation  <br>
-                t0 - onset time of upright tilt, <br>
-                delta t - time to reach amax from the onset time. <br>
+                The lumped parameter model of the human heart that has been used 
+                by the software has been adapted from Sun et al. This heart model 
+                includes component models of the atrium and ventricular mechanics, 
+                cardiac valve mechanics, direct ventricular interaction through the 
+                septum, systemic and pulmonary circulation, venous system and the 
+                influence of the pericardium on heart pumping performance.  <br><br>
               </p>
             </div>
             <div class="col-md-1"></div>
           </div>
+        </div>
+        <div class="row data-flow">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img src="./assets/img/docs/heart_model.png" alt="">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="maths-model">
+          <div class="row maths-model">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 model-content">
+              <p>
+                <br><br>
+                In the above model, there consists, <br><br>
+                • Four cardiac chambers<br>
+                • Four cardiac valves<br>
+                • Systemic and pulmonary circulation<br>
+                • Pericardium volume coupling<br>
+                • Interventricular system pressure coupling<br>
+                • Time-varying intrapleural pressure<br>
+              </p>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="row data-flow">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img src="./assets/img/docs/heart_model_2.png" alt="">
+          </div>
+          <div class="col-md-1"></div>
         </div>
         <div class="introduction">
           <div class="row introduction">
@@ -254,9 +291,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">RESULTS</h2>
               <p>
-                There was a decrease in the blood pressure observed when the body position is shifted
-                from supine (0 degrees) to a non-zero angle. A correlation between decrease in blood
-                pressure and tilt angle is shown below.
+                The pressure and volume simulations of the above model are as follows,
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -264,24 +299,7 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row data-flow">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-              <img src="./assets/img/docs/results_1.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <p>
-                <br><br> 
-                The aortic blood pressure for multiple tilt angles is as follows,
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/results_2.png" alt="">
+              <img src="./assets/img/docs/heart-results.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -292,15 +310,24 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">REFERENCES</h2>
               <p>
-                1. N. D. Williams, J. Mehlsen, H. T. Tran, and M. S. Olufsen, “An optimal control approach
-                 for blood pressure regulation during head-up tilt.” Biological Cybernetics, vol. 113, no. 1
-                 , pp. 149-159, 2018, doi: 10.1007/s00422-018-0783-9. <br>
-                2. Sam Ahmad Zamanian, "Modeling and Simulating Human Cardiovascular Response to Acceleration"
-                 MS thesis, Massachusetts Institute Of Technology June 2007 <br>
-                3. T. Heldt. Computational Models of Cardiovascular Response to Orthostatic Stress. PhD thesis,
-                 Harvard-MIT Division of Health Sciences and Technology, Massachusetts Institute of Technology <br>
-               4. Z. Samar. Cardiovascular Parameter Estimation using a Computational Model. SM thesis, Department
-                of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, May 2005
+                Sun, Ying, Mazen Beshara, Richard J. Lucariello, and Salvatore A. hiaramida. 
+                A comprehensive model for right-left heart interaction under the influence of 
+                pericardium and baroreflex. Am. J. Physiol. 272 (Heart Circ. Physiol. 41):
+                H1499-H1515, 1997. <br>
+                Avolio. A. P. (1980). Multi-branched model of the human arterial system. 
+                Medical and Biological Engineering and Computing, 18(6), 709-718. <br>
+                John, L. R. (2004). Forward electrical transmission line model of the human 
+                arterial system. Medical and Biological Engineering and Computing, 42(3), 312-
+                321. <br>
+                Hemalatha, K., Suganthi, L., & Manivannan, M. (2010). Hybrid 
+                cardiopulmonary model for analysis of Valsalva maneuver with radial artery 
+                pulse. Annals of biomedical engineering, 38(10), 3151-3161. <br>
+                Z. Samar. Cardiovascular Parameter Estimation using a Computational Model. 
+                SM thesis, Department of Electrical Engineering and Computer Science, 
+                Massachusetts Institute of Technology, Cambridge, MA, May 2005 <br>
+                Suganthi, L., Manivannan, M., Kunwar, B. K.,Joseph, G., & Danda, D. (2015). 
+                Morphological analysis of peripheral arterial signals in Takayasu’s arteritis. 
+                Journal of clinical monitoring and computing, 29(1), 87-95
               </p>
             </div>
             <div class="col-md-1"></div>

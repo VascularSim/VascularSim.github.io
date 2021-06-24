@@ -19,7 +19,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="icon" type="image/png" href="./assets/img/heart-logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    VascularSim Effect of Posture
+    VascularSim - Arteriosclerosis
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
@@ -73,12 +73,14 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/docs/bg_effect_of_posture.png')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/docs/bg_ecg_study.png')">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="title">Effect of posture on blood pressure</h1>
-          <h4 style="text-align: justify;">Study how the blood pressure, heart rate and other parameters change when there is a change in posture. Perform experiments like HUTT (Head UP Tilt Test) and analyze the results.</h4>
+          <h1 class="title">Artery Radius Reduction</h1>
+          <h4 style="text-align: justify;">Study the effect of reduction in 
+            the artery area on blood pressure and flow, and simulate vasoconstriction 
+            in multiple arteries to view its effects on the rest of the human body.</h4>
           <br>
         </div>
       </div>
@@ -90,9 +92,11 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">OVERVIEW</h2>
-            <h5 class="description">This module can be used to study the effect of change in posture on blood pressure. The Head-up-tilt test 
-              can be performed by controlling the tilt angle (in degrees) and the time taken (in seconds) for the tilt table to reach
-              the angle.</h5>
+            <h5 class="description">
+              This module can be used to study the effect of artery radius reduction
+              (expressed as a percentage reduction in the redius of the artery) on 
+              blood pressure. Simulate stenosis in multiple arteries and observe its effects.
+            </h5>
           </div>
         </div>
         <div class="introduction">
@@ -101,9 +105,12 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">LEARNING OBJECTIVES</h2>
               <p>
-                1. Understand how gravity affects the blood pressure <br><br>
-                2. Study the effect of varying gravitational field multiple arteries (Upper body and lower body) <br><br>
-                3. Simulate and study the effect of microgravity on blood pressure <br><br>
+                1. Understand vasoconstriction <br><br>
+                2. Understand how reduction in radius of an artery affect the blood 
+                pressure of that artery. <br><br>
+                3. Understand how the reduction in radius of one artery affect the 
+                blood pressure in other arteries. <br><br>
+              
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -115,27 +122,31 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">INTRODUCTION</h2>
               <p>
-                A tilt table test (sometimes known as a passive head-­up tilt test (HUTT) 
-                is used to record blood pressure and heart rate each minute, while the patient
-                 is tilted on a table at varying levels. The average duration of the test is 
-                 about an hour. The HUT test is often used to assess patients ability to regulate 
-                 blood pressure, in particular for patients who suffer from frequent episodes of 
-                 syncope, light- headedness, or dizziness . During the test, the patient 
-                 first rests on a tilt-table in supine position. After steady values for 
-                 pressure and heart rate (HR) have been established, the table is tilted 
-                 to an angle which is customizable. Upon tilting, gravity pools approximately 
-                 500–1000ml of blood in the lower extremities reducing venous return, which
-                 induces a reduction in cardiac filling, pressure and volume. In response,
-                 blood pressure in the upper body is decreased, while blood pressure in
-                 the lower body is increased. <sup>[1]</sup>
-              </p>
-              <p>
-                For normal subject, this pressure imbalance causes the baroreflex to kick in 
-                causing increase in heart rate, cardiac contractility, and vascular resistance
-                and decrease in vascular compliance. Whereas in subjects with autonomic 
-                dysfunction this is associated with severe risks including dizziness, loss of 
-                balance leading to falls, and reflex mediated syncope, in particular, for the
-                elderly and for patients with hypertension and diabetes.<sup>[1]</sup>
+                The circulatory system, also called the cardiovascular system or the 
+                vascular system, is an organ system that permits blood to circulate 
+                and transport nutrients (such as amino acids and electrolytes), oxygen, 
+                carbon dioxide, hormones, and blood cells to and from the cells in the 
+                body to provide nourishment and help in fighting diseases, stabilize 
+                temperature and pH, and maintain homeostasis. The essential components
+                of the human cardiovascular system are the heart, blood and blood vessels.
+                </p>
+                <p>
+                <br> The circulatory system of the blood has two components, a pulmonary circulation 
+                (a "loop" through the lungs where blood is oxygenated) and a systemic circulation 
+                ("loop" through the rest of the body to provide oxygenated blood). <br><br>
+                Oxygenated blood enters the systemic circulation when leaving the left ventricle, 
+                through the aortic semilunar valve. The first part of the systemic circulation is 
+                the aorta, a massive and thick-walled artery. The aorta arches and gives branches 
+                supplying the upper part of the body after passing through the aortic opening of 
+                the diaphragm at the level of thoracic ten vertebra, it enters the abdomen. Later 
+                it descends down and supplies branches to abdomen, pelvis, perineum and the lower 
+                limbs. The walls of aorta are elastic. This elasticity helps to maintain the blood 
+                pressure throughout the body. When the aorta receives almost five liters of blood 
+                from the heart, it recoils and is responsible for pulsating blood pressure. 
+                Moreover, as aorta branches into smaller arteries, their elasticity goes on 
+                decreasing and their compliance goes on increasing.<br><br> 
+
+                The following diagram depicts the major arteries that are a part of the systemic circulation.
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -145,17 +156,49 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row introductory-image">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-              <img class="introductory-image" src="./assets/img/docs/tilt-test.png" alt="">
+              <img class="introductory-image-ecg" src="./assets/img/docs/human_artery_tree.png" alt="">
             </div>
             <div class="col-md-2"></div>
           </div>
         </div>
+        <div class="introduction">
+          <div class="row introduction">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 intro-content">
+              <p>
+                <br><br> Arteriosclerosis is the thickening, hardening, and loss of 
+                elasticity of the walls of arteries. This process gradually restricts 
+                the blood flow to one's organs and tissues and can lead to severe health 
+                risks brought on by atherosclerosis, which is a specific form of 
+                arteriosclerosis caused by the buildup of fatty plaques, cholesterol, 
+                and some other substances in and on the artery walls.
+                <br><br>
+                Atherosclerosis is a pattern of the disease arteriosclerosis in which 
+                the wall of the artery develops abnormalities, called lesions. These 
+                lesions may lead to narrowing due to the buildup of atheromatous plaque.
+              </p>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="data-flow">
+          <div class="row introductory-image">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <img class="introductory-image-ecg" src="./assets/img/docs/arteriosclerosis" alt="">
+              <p>Micrograph of an artery that supplies the heart showing significant atherosclerosis and marked luminal narrowing. 
+                Tissue has been stained using Masson's trichrome</p>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+        <br><br>
         <div class="data-flow">
           <div class="row data-flow">
             <div class="col-md-1"></div>
             <div class="col-md-10">
               <h2 class="title data-title">BLOCK DIAGRAM</h2>
-              <img class="block-diagram" src="./assets/img/docs/eff_of_posture.png" alt="">
+              <img class="block-diagram" src="./assets/img/docs/artery_narrowing.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -166,36 +209,53 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 model-content">
               <h2 class="title">MATHEMATICAL MODEL</h2>
               <p>
-                The model for the simulation of Head-up-tilt test (HUTT) has been adopted
-                from a lumped parameter model that has been developed by T.Heldt.<sup>[3]</sup>As
-                described by Sam Ahmad Zamanian <sup>[2]</sup>, the hydrostatic pressure gradient imposed
-                on a tube (under a constant accelerational field of gravity) by tilting it upwards
-                is given by <br><br>
-              </p>
-              <p class="maths-formula">D * g * h * sin(a) <b><br></b></p>
-              <p>
-                where, <br>
-                D - density of the fluid (blood) <br>
-                g - gravitational accleration <br>
-                h - effective height of the artery <br>
-                a - angle of tilt <br> <br>
-                The effective height h of the compartment is assumed to be one half of the 
-                anatomical vertical heights; the exception to this is in the legs, where the 
-                effective height is one third of the anatomical height. <br> <br>
-                The time course of the tilt angle follows a raised cosine model given by,
-              </p>
-              <img class="maths-sine" src="./assets/img/docs/maths-sine-effect_of_posture.png" alt="">
-              <p>
-                <br> <br> where, <br>
-                amax - maximum tilt angle in the upright tilt simulation  <br>
-                t0 - onset time of upright tilt, <br>
-                delta t - time to reach amax from the onset time. <br>
+                The Transmission line model of the human arterial tree is based 
+                on four-element Windkessel. The four elements are as follows,
+                <br><br>
+                  1. Series Resistance <br>
+                	2. Inductance <br>
+                	3. Capacitance <br>
+                	4. Parallel resistance
+                <br><br>
+                These values are based on the radius, Elasticity, length height of 
+                every individual segment that is a part of the 128 segment model of 
+                the human artery tree.
+                <br><br>
+                Thus, whenever there is a change in the radius, this will affect the 
+                elements of the Windkessel thereby affecting the simulation output.
+                <br><br>
+                The model that has been used for simulation of arteriosclerosis is by 
+                modifying these values as follows,
+                <br><br>
+                The following assumptions are taken into consideration,
+                <br><br>
+                	1. blood flow is one dimensional and axial <br>
+                	2. arteries are elastic and cylindrical <br>
+                	3. blood flow is laminar <br>
+                	4. only the geometrical property of arterial segment is changed <br>
+                	5. heart rate, stroke volume, duration of ejection and cardiac output are constant
+                <div class="data-flow">
+                  <div class="row data-flow">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <img class="block-diagram" src="./assets/img/docs/maths-arteriosclerosis.png" alt="" style="height:70%;">
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+                where,
+                u – Blood viscosity <br>
+                r – reflection coefficient <br>
+                p – Blood density <br>
+                E – Young’s modulus <br>
+                h – length of the artery <br>
+                D - % reduction in radius <br>
               </p>
             </div>
             <div class="col-md-1"></div>
           </div>
         </div>
-        <div class="introduction">
+        <div class="introduction" style="padding-top: 10%;">
           <div class="row introduction">
             <div class="col-md-1"></div>
             <div class="col-md-10 intro-content">
@@ -254,9 +314,8 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">RESULTS</h2>
               <p>
-                There was a decrease in the blood pressure observed when the body position is shifted
-                from supine (0 degrees) to a non-zero angle. A correlation between decrease in blood
-                pressure and tilt angle is shown below.
+                The simulation results of the ascending aorta pressure waveform for 
+                varying levels of reduction in its radius is as shown below,
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -264,24 +323,7 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row data-flow">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-              <img src="./assets/img/docs/results_1.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <p>
-                <br><br> 
-                The aortic blood pressure for multiple tilt angles is as follows,
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/results_2.png" alt="">
+              <img src="./assets/img/docs/results_vaso.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -292,15 +334,20 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">REFERENCES</h2>
               <p>
-                1. N. D. Williams, J. Mehlsen, H. T. Tran, and M. S. Olufsen, “An optimal control approach
-                 for blood pressure regulation during head-up tilt.” Biological Cybernetics, vol. 113, no. 1
-                 , pp. 149-159, 2018, doi: 10.1007/s00422-018-0783-9. <br>
-                2. Sam Ahmad Zamanian, "Modeling and Simulating Human Cardiovascular Response to Acceleration"
-                 MS thesis, Massachusetts Institute Of Technology June 2007 <br>
-                3. T. Heldt. Computational Models of Cardiovascular Response to Orthostatic Stress. PhD thesis,
-                 Harvard-MIT Division of Health Sciences and Technology, Massachusetts Institute of Technology <br>
-               4. Z. Samar. Cardiovascular Parameter Estimation using a Computational Model. SM thesis, Department
-                of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, May 2005
+                Avolio. A. P. (1980). Multi-branched model of the human arterial system. 
+                Medical and Biological Engineering and Computing, 18(6), 709-718. <br>
+                John, L. R. (2004). Forward electrical transmission line model of the human 
+                arterial system. Medical and Biological Engineering and Computing, 42(3), 312-
+                321. <br>
+                Hemalatha, K., Suganthi, L., & Manivannan, M. (2010). Hybrid 
+                cardiopulmonary model for analysis of Valsalva maneuver with radial artery 
+                pulse. Annals of biomedical engineering, 38(10), 3151-3161. <br>
+                Z. Samar. Cardiovascular Parameter Estimation using a Computational Model. 
+                SM thesis, Department of Electrical Engineering and Computer Science, 
+                Massachusetts Institute of Technology, Cambridge, MA, May 2005 <br>
+                Suganthi, L., Manivannan, M., Kunwar, B. K.,Joseph, G., & Danda, D. (2015). 
+                Morphological analysis of peripheral arterial signals in Takayasu’s arteritis. 
+                Journal of clinical monitoring and computing, 29(1), 87-95
               </p>
             </div>
             <div class="col-md-1"></div>

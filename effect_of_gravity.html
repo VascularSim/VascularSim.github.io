@@ -19,7 +19,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="icon" type="image/png" href="./assets/img/heart-logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    VascularSim Effect of Posture
+    VascularSim - Effect of Gravity
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
@@ -39,7 +39,7 @@ The above copyright notice and this permission notice shall be included in all c
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="Vascularsim.html">
-          VascularSim </a>
+          VascularSim</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -73,12 +73,15 @@ The above copyright notice and this permission notice shall be included in all c
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/docs/bg_effect_of_posture.png')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/docs/bg_gravity_effect.png')">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="title">Effect of posture on blood pressure</h1>
-          <h4 style="text-align: justify;">Study how the blood pressure, heart rate and other parameters change when there is a change in posture. Perform experiments like HUTT (Head UP Tilt Test) and analyze the results.</h4>
+          <h1 class="title">Effect of gravity on blood pressure</h1>
+          <h4 style="text-align: justify;">Study how the blood pressure, heart rate and 
+            other parameters change when there is a change in the gravitational 
+            field surrounding the subject. Simulate microgravity and analyze its 
+            effects on blood pressure and flow.
           <br>
         </div>
       </div>
@@ -90,9 +93,10 @@ The above copyright notice and this permission notice shall be included in all c
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">OVERVIEW</h2>
-            <h5 class="description">This module can be used to study the effect of change in posture on blood pressure. The Head-up-tilt test 
-              can be performed by controlling the tilt angle (in degrees) and the time taken (in seconds) for the tilt table to reach
-              the angle.</h5>
+            <h5 class="description">This module can be used to study the effect of 
+              change of gravitational field on blood pressure. The gravitational 
+              field can be varied by controlling the acceleration due to gravity 
+              (m/s2). With this module, the users can also simulate microgravity.</h5>
           </div>
         </div>
         <div class="introduction">
@@ -102,7 +106,8 @@ The above copyright notice and this permission notice shall be included in all c
               <h2 class="title">LEARNING OBJECTIVES</h2>
               <p>
                 1. Understand how gravity affects the blood pressure <br><br>
-                2. Study the effect of varying gravitational field multiple arteries (Upper body and lower body) <br><br>
+                2. Study the effect of varying gravitational field multiple 
+                arteries (Upper body and lower body) <br><br>
                 3. Simulate and study the effect of microgravity on blood pressure <br><br>
               </p>
             </div>
@@ -115,39 +120,32 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">INTRODUCTION</h2>
               <p>
-                A tilt table test (sometimes known as a passive head-­up tilt test (HUTT) 
-                is used to record blood pressure and heart rate each minute, while the patient
-                 is tilted on a table at varying levels. The average duration of the test is 
-                 about an hour. The HUT test is often used to assess patients ability to regulate 
-                 blood pressure, in particular for patients who suffer from frequent episodes of 
-                 syncope, light- headedness, or dizziness . During the test, the patient 
-                 first rests on a tilt-table in supine position. After steady values for 
-                 pressure and heart rate (HR) have been established, the table is tilted 
-                 to an angle which is customizable. Upon tilting, gravity pools approximately 
-                 500–1000ml of blood in the lower extremities reducing venous return, which
-                 induces a reduction in cardiac filling, pressure and volume. In response,
-                 blood pressure in the upper body is decreased, while blood pressure in
-                 the lower body is increased. <sup>[1]</sup>
-              </p>
-              <p>
-                For normal subject, this pressure imbalance causes the baroreflex to kick in 
-                causing increase in heart rate, cardiac contractility, and vascular resistance
-                and decrease in vascular compliance. Whereas in subjects with autonomic 
-                dysfunction this is associated with severe risks including dizziness, loss of 
-                balance leading to falls, and reflex mediated syncope, in particular, for the
-                elderly and for patients with hypertension and diabetes.<sup>[1]</sup>
+                Normally, when a person is standing upright, the volume and 
+                hence the pressure of the blood in the arteries of the legs 
+                is more than in the arteries of the upper body. This is due 
+                to the force of gravity. In various scenarios where an additional 
+                force acts along with the gravity, it will seem as though the 
+                gravity itself was altered. <br><br> For e.g., in a free fall, a person 
+                feels weightless and it is as though there no force of gravity. 
+                While take off in an aeroplane, it seems as though the weight has increased.
+                <br><br> Artifical Gravity is measured in 'G's i.e., where 1G corresponds to the 
+                force due to earth's gravity. It can be created on earth by parabolic 
+                flights where for a short duration, the aeroplane rises along a certain 
+                parabolic path to simulate forces greater than 1G and falls along another 
+                parabolic path to simulate forces lesser than 1G. Even near 0G (microgravity) 
+                can be simulated in this manner. <br><br>
+                Increased artificial gravity (>1G) can also be created in laboratory 
+                conditions by the use of a centrifugal force. The person can be inside 
+                a chamber that is rotating at sufficiently high angular velocity that 
+                the centrifugal force will hold the person against the chamber's walls. 
+                Higher the angluar velocity, higher is this cetnrifugal force which is 
+                acting like artificial gravity. Artifical Gravity is measured in 'G's i.e., 
+                where 1G corresponds to the force due to earth's gravity. 
+                The effects of such experiments on the blood pressure and flows in the 
+                various arteries can be simulated using this model.
               </p>
             </div>
             <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="data-flow">
-          <div class="row introductory-image">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <img class="introductory-image" src="./assets/img/docs/tilt-test.png" alt="">
-            </div>
-            <div class="col-md-2"></div>
           </div>
         </div>
         <div class="data-flow">
@@ -155,7 +153,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-1"></div>
             <div class="col-md-10">
               <h2 class="title data-title">BLOCK DIAGRAM</h2>
-              <img class="block-diagram" src="./assets/img/docs/eff_of_posture.png" alt="">
+              <img class="block-diagram" src="./assets/img/docs/eff_of_gravity.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -166,10 +164,10 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 model-content">
               <h2 class="title">MATHEMATICAL MODEL</h2>
               <p>
-                The model for the simulation of Head-up-tilt test (HUTT) has been adopted
+                The model for the simulation of change in gravitational field has been adopted
                 from a lumped parameter model that has been developed by T.Heldt.<sup>[3]</sup>As
                 described by Sam Ahmad Zamanian <sup>[2]</sup>, the hydrostatic pressure gradient imposed
-                on a tube (under a constant accelerational field of gravity) by tilting it upwards
+                on a tube (under a constant angle wrt to the ground) by changing the accleration due to gravity
                 is given by <br><br>
               </p>
               <p class="maths-formula">D * g * h * sin(a) <b><br></b></p>
@@ -182,14 +180,6 @@ The above copyright notice and this permission notice shall be included in all c
                 The effective height h of the compartment is assumed to be one half of the 
                 anatomical vertical heights; the exception to this is in the legs, where the 
                 effective height is one third of the anatomical height. <br> <br>
-                The time course of the tilt angle follows a raised cosine model given by,
-              </p>
-              <img class="maths-sine" src="./assets/img/docs/maths-sine-effect_of_posture.png" alt="">
-              <p>
-                <br> <br> where, <br>
-                amax - maximum tilt angle in the upright tilt simulation  <br>
-                t0 - onset time of upright tilt, <br>
-                delta t - time to reach amax from the onset time. <br>
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -254,17 +244,10 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <h2 class="title">RESULTS</h2>
               <p>
-                There was a decrease in the blood pressure observed when the body position is shifted
-                from supine (0 degrees) to a non-zero angle. A correlation between decrease in blood
-                pressure and tilt angle is shown below.
+                There was an increase in the blood pressure, for the arteries on the upper part of the body,
+                for increase in gravitational accleration, whereas the opposite was observed in the lower
+                extremities.
               </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/results_1.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -273,7 +256,7 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="col-md-10 intro-content">
               <p>
                 <br><br> 
-                The aortic blood pressure for multiple tilt angles is as follows,
+                The aortic blood pressure for various gravitational fields is as follows,
               </p>
             </div>
             <div class="col-md-1"></div>
@@ -281,7 +264,7 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="row data-flow">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-              <img src="./assets/img/docs/results_2.png" alt="">
+              <img src="./assets/img/docs/results_2_gravity.png" alt="">
             </div>
             <div class="col-md-1"></div>
           </div>

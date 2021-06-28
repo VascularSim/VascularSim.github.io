@@ -75,242 +75,48 @@ The above copyright notice and this permission notice shall be included in all c
   </nav>
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/docs/bg_effect_of_posture.png')">
     <div class="container">
+      
       <div class="row">
         <div class="col-md-6">
           <h1 class="title">Create your own customized cardiac laboratory</h1>
-          <h4 style="text-align: justify;">Have your own cardiac lab, perform experiments
-          like never before, understand cardio-vascular concepts better by controlling a 
-          myriad of parameters from microscopic values relating to elastance of arteries to
-          macroscopic values like radius and length of arteries.</h4>
+          <h4 style="text-align: justify;">Have your own cardiac lab, perform experiments like never before, 
+            understand cardio-vascular concepts better by controlling a myriad of parameters ranging from elastance of arteries 
+            to  radius and length of arteries.</h4>
           <br>
         </div>
       </div>
     </div>
   </div>
   <div class="main main-raised">
+
     <div class="container">
       <div class="section text-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
             <h2 class="title">OVERVIEW</h2>
-            <h5 class="description">This module can be used to simulate specific conditions that 
-              will prove useful for research and stu
+            <h5 class="description">
+              <p>With this module, Users can study and simulate waveforms by modifying various parameters including</p>
+             <ul>
+               <li>Artery length</li>
+               <li>Artery radius</li>
+               <li>Artery elasticity (Young’s Modulus)</li>
+               <li>Artery viscoelastance</li>
+               <li>Blood density</li>
+               <li>Blood viscosity</li>
+               <li>Reflection coefficient of blood</li>
+               <li>Elastance, inertance, resistance of heart chambers, Valve areas</li>
+               <li>Heart rate</li>
+               <li>baroreflex sensitivity</li>
+             </ul>
+
+              
+              
             </h5>
-          </div>
-        </div>
-        <div class="introduction">
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <h2 class="title">LEARNING OBJECTIVES</h2>
-              <p>
-                1. Understand how gravity affects the blood pressure <br><br>
-                2. Study the effect of varying gravitational field multiple arteries (Upper body and lower body) <br><br>
-                3. Simulate and study the effect of microgravity on blood pressure <br><br>
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="introduction">
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <h2 class="title">INTRODUCTION</h2>
-              <p>
-                A tilt table test (sometimes known as a passive head-­up tilt test (HUTT) 
-                is used to record blood pressure and heart rate each minute, while the patient
-                 is tilted on a table at varying levels. The average duration of the test is 
-                 about an hour. The HUT test is often used to assess patients ability to regulate 
-                 blood pressure, in particular for patients who suffer from frequent episodes of 
-                 syncope, light- headedness, or dizziness . During the test, the patient 
-                 first rests on a tilt-table in supine position. After steady values for 
-                 pressure and heart rate (HR) have been established, the table is tilted 
-                 to an angle which is customizable. Upon tilting, gravity pools approximately 
-                 500–1000ml of blood in the lower extremities reducing venous return, which
-                 induces a reduction in cardiac filling, pressure and volume. In response,
-                 blood pressure in the upper body is decreased, while blood pressure in
-                 the lower body is increased. <sup>[1]</sup>
-              </p>
-              <p>
-                For normal subject, this pressure imbalance causes the baroreflex to kick in 
-                causing increase in heart rate, cardiac contractility, and vascular resistance
-                and decrease in vascular compliance. Whereas in subjects with autonomic 
-                dysfunction this is associated with severe risks including dizziness, loss of 
-                balance leading to falls, and reflex mediated syncope, in particular, for the
-                elderly and for patients with hypertension and diabetes.<sup>[1]</sup>
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="data-flow">
-          <div class="row introductory-image">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <img class="introductory-image" src="./assets/img/docs/tilt-test.png" alt="">
-            </div>
-            <div class="col-md-2"></div>
-          </div>
-        </div>
-        <div class="data-flow">
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <h2 class="title data-title">BLOCK DIAGRAM</h2>
-              <img class="block-diagram" src="./assets/img/docs/eff_of_posture.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="maths-model">
-          <div class="row maths-model">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 model-content">
-              <h2 class="title">MATHEMATICAL MODEL</h2>
-              <p>
-                The model for the simulation of Head-up-tilt test (HUTT) has been adopted
-                from a lumped parameter model that has been developed by T.Heldt.<sup>[3]</sup>As
-                described by Sam Ahmad Zamanian <sup>[2]</sup>, the hydrostatic pressure gradient imposed
-                on a tube (under a constant accelerational field of gravity) by tilting it upwards
-                is given by <br><br>
-              </p>
-              <p class="maths-formula">D * g * h * sin(a) <b><br></b></p>
-              <p>
-                where, <br>
-                D - density of the fluid (blood) <br>
-                g - gravitational accleration <br>
-                h - effective height of the artery <br>
-                a - angle of tilt <br> <br>
-                The effective height h of the compartment is assumed to be one half of the 
-                anatomical vertical heights; the exception to this is in the legs, where the 
-                effective height is one third of the anatomical height. <br> <br>
-                The time course of the tilt angle follows a raised cosine model given by,
-              </p>
-              <img class="maths-sine" src="./assets/img/docs/maths-sine-effect_of_posture.png" alt="">
-              <p>
-                <br> <br> where, <br>
-                amax - maximum tilt angle in the upright tilt simulation  <br>
-                t0 - onset time of upright tilt, <br>
-                delta t - time to reach amax from the onset time. <br>
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="introduction">
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <h2 class="title">CARDIAC REGULATION</h2>
-              <p>
-                Any aberrant changes in blood pressure would be automatically compensated by the body by changing
-                other parameters such as heart rate, resistances and so on. Baroreflex is one such system that
-                kicks in when there is any aberration detected. There are two baroreceptors located in the body,
-                one in the carotid sinus and the other in the aortic arch. The baroreflex mechanism is a fast
-                response to changes in blood pressure. Combining the models of Heldt<sup>[3]</sup> and Samar<sup>[4]</sup>, and
-                modifying the control loop we have arrived upon a negative feedback loop for the cardiovascular
-                control system shown below.
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/eff_of_posture_cardiac_loop.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <p>
-                <br><br> The arterial baroreflex is described by the below diagram, where S(t) and P(t) represent the sympathetic
-                and parasympathetic filters, and the Gs and Gp are the sympathetic and parasympathetic gains for the effector variable.
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/maths-sine-effect_of_posture_arterial_baroreflex.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <p>
-                <br>
-                The input to the model is the error signal which is the difference between the pressure at the aortic 
-                arch and the set pressure which is 91 mmHg.
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="introduction">
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <h2 class="title">RESULTS</h2>
-              <p>
-                There was a decrease in the blood pressure observed when the body position is shifted
-                from supine (0 degrees) to a non-zero angle. A correlation between decrease in blood
-                pressure and tilt angle is shown below.
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/results_1.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <p>
-                <br><br> 
-                The aortic blood pressure for multiple tilt angles is as follows,
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row data-flow">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img src="./assets/img/docs/results_2.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-        </div>
-        <div class="introduction">
-          <div class="row introduction">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 intro-content">
-              <h2 class="title">REFERENCES</h2>
-              <p>
-                1. N. D. Williams, J. Mehlsen, H. T. Tran, and M. S. Olufsen, “An optimal control approach
-                 for blood pressure regulation during head-up tilt.” Biological Cybernetics, vol. 113, no. 1
-                 , pp. 149-159, 2018, doi: 10.1007/s00422-018-0783-9. <br>
-                2. Sam Ahmad Zamanian, "Modeling and Simulating Human Cardiovascular Response to Acceleration"
-                 MS thesis, Massachusetts Institute Of Technology June 2007 <br>
-                3. T. Heldt. Computational Models of Cardiovascular Response to Orthostatic Stress. PhD thesis,
-                 Harvard-MIT Division of Health Sciences and Technology, Massachusetts Institute of Technology <br>
-               4. Z. Samar. Cardiovascular Parameter Estimation using a Computational Model. SM thesis, Department
-                of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, May 2005
-              </p>
-            </div>
-            <div class="col-md-1"></div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
   <footer class="footer footer-default">
     <div class="container">
@@ -322,7 +128,7 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li>
-            <a href="https://www.creative-tim.com/presentation">
+            <a href="">
               Home
             </a>
           </li>
